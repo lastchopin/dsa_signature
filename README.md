@@ -21,6 +21,7 @@ Dieses Projekt enthält eine vollständige Implementierung des DSA, einschließl
 2. **Signierung und Verifikation**: Signiert Nachrichten mit dem DSA-Signaturalgorithmus unter Verwendung der SHA-256 Hashfunktion und verifiziert die Signaturen korrekt.
 3. **Kompromittierung des privaten Schlüssels**: Demonstriert, wie der private Schlüssel `a` kompromittiert werden kann, wenn dieselbe Zufallszahl `r` für zwei verschiedene Signaturen verwendet wird.
 
+
 ## Installation
 
 1. **Klonen Sie das Repository**:
