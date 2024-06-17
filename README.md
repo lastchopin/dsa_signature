@@ -11,8 +11,7 @@ Dieses Projekt implementiert den DSA (Digital Signature Algorithm) zur Generieru
 - [Beschreibung](#beschreibung)
 - [Installation](#installation)
 - [Benutzung](#benutzung)
-- [Beitragende](#beitragende)
-- [Lizenz](#lizenz)
+
 
 ## Beschreibung
 
