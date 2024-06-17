@@ -18,9 +18,8 @@ Dieses Projekt implementiert den DSA (Digital Signature Algorithm) zur Generieru
 Dieses Projekt enthält eine vollständige Implementierung des DSA, einschließlich:
 
 1. **Schlüsselgenerierung**: Erzeugt die DSA-Schlüsselparameter (p, q, alpha, a, beta) gemäß den Vorgaben in FIPS 186-4.
-2. **Signierung**: Signiert Nachrichten mit dem DSA-Signaturalgorithmus unter Verwendung der SHA-256 Hashfunktion.
-3. **Verifikation**: Verifiziert die Signaturen korrekt.
-4. **Kompromittierung des privaten Schlüssels**: Demonstriert, wie der private Schlüssel `a` kompromittiert werden kann, wenn dieselbe Zufallszahl `r` für zwei verschiedene Signaturen verwendet wird.
+2. **Signierung und Verifikation**: Signiert Nachrichten mit dem DSA-Signaturalgorithmus unter Verwendung der SHA-256 Hashfunktion und verifiziert die Signaturen korrekt.
+3. **Kompromittierung des privaten Schlüssels**: Demonstriert, wie der private Schlüssel `a` kompromittiert werden kann, wenn dieselbe Zufallszahl `r` für zwei verschiedene Signaturen verwendet wird.
 
 ## Installation
 
@@ -43,30 +42,22 @@ Dieses Projekt enthält eine vollständige Implementierung des DSA, einschließl
 
 Das Projekt besteht aus mehreren Python-Skripten:
 
-- `key_generation.py`: Erzeugt die DSA-Schlüssel.
-- `sign.py`: Signiert eine Nachricht.
-- `verify.py`: Verifiziert eine Signatur.
-- `attack.py`: Demonstriert die Kompromittierung des privaten Schlüssels.
+- `dsa_key_generation.py`: Erzeugt die DSA-Schlüssel.
+- `dsa_sign_verify.py`: Signiert eine Nachricht und verifiziert die Signatur.
+- `dsa_attack.py`: Demonstriert die Kompromittierung des privaten Schlüssels.
 
 ### Schlüsselgenerierung
 
 Erstellen Sie die DSA-Schlüssel:
 ```bash
-python key_generation.py
+python dsa_key_generation.py
 ```
 
-### Signieren einer Nachricht
+### Signieren einer Nachricht und verifizieren die Signatur
 
-Signieren Sie eine Nachricht:
+Signieren Sie eine Nachricht und verifizieren Sie die Signatur:
 ```bash
-python sign.py
-```
-
-### Verifizieren einer Signatur
-
-Verifizieren Sie eine Signatur:
-```bash
-python verify.py
+python dsa_sign_verify.py
 ```
 
 ### Kompromittierung des privaten Schlüssels
